@@ -3,42 +3,171 @@
 }
 
 .card {
+  display: flex;
   width: 736px;
   height: 512px;
-  display: flex;
+  border-radius: 30px;
+  box-shadow: 10px 10px 60px rgba(200, 199, 255, 0.3);
 }
 
-.card-left {
-  border-radius: 30px;
+.card-left,
+.card-right {
   width: 368px;
-  width: 368px;
+}
+
+.card-left,
+.card-circle,
+.card-text,
+.card-right,
+.card-right .points,
+.points-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.card-left {
+  border-radius: 30px;
+  gap: 32px;
   background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+}
+
+.card-left h2,
+.card-circle span,
+.card-text h3,
+.card-left p {
+  font-weight: 500;
+}
+
+.card-left h2,
+.card-circle,
+.card-left p {
+  color: var(--light-lavender);
 }
 
 .card-left h2 {
   font-size: 1.5rem;
-  font-weight: 500;
-  color: var(--light-lavender);
+}
+
+.card-circle,
+.card-circle span,
+.card-text h3 {
+  line-height: 1;
 }
 
 .card-circle {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  gap: 8px;
   background: linear-gradient(var(--violet-blue), var(--persian-blue));
+  font-size: 18px;
+}
+
+.card-circle span,
+.card-text h3 {
+  color: var(--pale-blue);
+}
+
+.card-circle span {
+  font-size: 72px;
+  font-weight: 700;
+}
+
+.card-text {
+  gap: 22px;
+}
+
+.card-text h3,
+.card-left p {
+  letter-spacing: 1.5px;
+}
+
+.card-text h3 {
+  font-size: 30px;
+}
+
+.card-left p {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
 }
 
 .card-right {
-  width: 368px;
+  padding-left: 40px;
+  padding-right: 40px;
+  align-items: start;
+}
+
+.card-right h2 {
+  font-size: 24px;
+  line-height: 1;
+  color: var(--dark-gray-blue);
+}
+
+.card-right .points {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  gap: 20px;
+}
+
+.points-card {
+  width: 288px;
+  height: 56px;
+  border-radius: 12px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px;
+  font-size: 18px;
+}
+
+.points-card div {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  gap: 8px;
+}
+
+.reaction {
+  color: var(--light-red);
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.memory {
+  color: var(--orangey-yellow);
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.verbal {
+  color: var(--green-teal);
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.visual {
+  color: var(--cobalt-blue);
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.span-outer {
+  color: var(--light-lavender);
+}
+
+.span-inner {
+  color: var(--dark-gray-blue);
+  font-weight: 800;
+}
+
+.button {
+  width: 100%;
+  height: 56px;
+  border-radius: 50px;
+  border: none;
+  color: var(--light-lavender);
+  background-color: var(--dark-gray-blue);
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: var(--light-royal-blue);
 }
