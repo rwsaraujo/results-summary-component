@@ -7,10 +7,9 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 10px;
-  box-sizing: border-box;
 }
 
-.flex {
+.flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
