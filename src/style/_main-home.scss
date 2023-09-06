@@ -1,3 +1,5 @@
+@use "colors";
+
 .main {
   height: calc(100vh - 60px);
 }
@@ -43,7 +45,10 @@
 
 .card-left {
   gap: 32px;
-  background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+  background: linear-gradient(
+    colors.$light-slate-blue,
+    colors.$light-royal-blue
+  );
 }
 
 .card-left h2,
@@ -58,7 +63,7 @@
 .card-left p,
 .span-outer,
 .button {
-  color: var(--light-lavender);
+  color: colors.$light-lavender;
 }
 
 .card-left h2 {
@@ -87,12 +92,12 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background: linear-gradient(var(--violet-blue), var(--persian-blue));
+  background: linear-gradient(colors.$violet-blue, colors.$persian-blue);
 }
 
 .card-circle span,
 .card-text h3 {
-  color: var(--pale-blue);
+  color: colors.$pale-blue;
 }
 
 .card-circle span {
@@ -127,7 +132,7 @@
 
 .card-right h2,
 .span-inner {
-  color: var(--dark-gray-blue);
+  color: colors.$dark-gray-blue;
 }
 
 .card-right h2 {
@@ -158,37 +163,25 @@
 }
 
 .reaction {
-  color: var(--light-red);
+  color: colors.$light-red;
   background: hsla(0, 100%, 67%, 0.1);
 }
 
 .memory {
-  color: var(--orangey-yellow);
+  color: colors.$orangey-yellow;
   background: hsla(39, 100%, 56%, 0.1);
 }
 
 .verbal {
-  color: var(--green-teal);
+  color: colors.$green-teal;
   background: hsla(166, 100%, 37%, 0.1);
 }
 
 .visual {
-  color: var(--cobalt-blue);
+  color: colors.$cobalt-blue;
   background: hsla(234, 85%, 45%, 0.1);
 }
 
 .span-inner {
   font-weight: 800;
-}
-
-.button {
-  border-radius: 50px;
-  border: none;
-  background: var(--dark-gray-blue);
-  transition: 0.2s;
-}
-
-.button:hover {
-  cursor: pointer;
-  background: var(--light-royal-blue);
 }
