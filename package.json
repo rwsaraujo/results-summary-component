@@ -1,13 +1,12 @@
 {
   "name": "results-summary-component",
   "version": "1.0.0",
-  "description": "![Design preview for the Results summary component coding challenge](./design/desktop-preview.jpg)",
-  "main": "index.js",
+  "description": "This is a solution to the 'Results Summary Component' challenge on Frontend Mentor",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch src/style/style.scss build/style/style.css --style compressed",
-    "uglifyjs": "uglifyjs src/js/script.js -c -o build/js/script.js"
+    "sass": "sass --watch src/style/style.scss build/style/style.css --style compressed"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Raphael Araujo",
+  "license": "MIT License"
 }

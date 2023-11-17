@@ -1,78 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <!-- Google Fonts - Hanken Grotesk (500, 700, 800) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts - Hanken Grotesk (500, 700, 800) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./build/style/style.css" />
 
-  <!-- CSS Style -->
-  <link rel="stylesheet" href="./build/style/style.css">
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
 
-  <title>Frontend Mentor | Results summary component</title>
-</head>
+  <body>
+    <main class="main container flex-center">
+      <div class="card">
+        <div class="card-left">
+          <h2>Your Result</h2>
 
-<body>
-  <main class="main container flex-center">
-    <div class="card">
-      <div class="card-left">
-        <h2>Your Result</h2>
+          <div class="card-circle">
+            <span>76</span>
+            of 100
+          </div>
 
-        <div class="card-circle">
-          <span>76</span>
-          of 100
+          <div class="card-text">
+            <h3>Great</h3>
+            <p>
+              You scored higher than 65% of <br />
+              the people who have taken <br />
+              these tests.
+            </p>
+          </div>
         </div>
 
-        <div class="card-text">
-          <h3>Great</h3>
-          <p>You scored higher than 65% of <br> the people who have taken <br> these tests.</p>
+        <div class="card-right">
+          <h2>Summary</h2>
+
+          <div class="points">
+            <div class="points-card reaction">
+              <div>
+                <img src="./assets/images/icon-reaction.svg" alt="" />
+                <h3>Reaction</h3>
+              </div>
+              <span class="span-outer"
+                ><span class="span-inner">80</span> / 100</span
+              >
+            </div>
+
+            <div class="points-card memory">
+              <div>
+                <img src="./assets/images/icon-memory.svg" alt="" />
+                <h3>Memory</h3>
+              </div>
+              <span class="span-outer"
+                ><span class="span-inner">92</span> / 100</span
+              >
+            </div>
+
+            <div class="points-card verbal">
+              <div>
+                <img src="./assets/images/icon-verbal.svg" alt="" />
+                <h3>Verbal</h3>
+              </div>
+              <span class="span-outer"
+                ><span class="span-inner">61</span> / 100</span
+              >
+            </div>
+
+            <div class="points-card visual">
+              <div>
+                <img src="./assets/images/icon-visual.svg" alt="" />
+                <h3>Visual</h3>
+              </div>
+              <span class="span-outer"
+                ><span class="span-inner">72</span> / 100</span
+              >
+            </div>
+          </div>
+
+          <button type="button" class="button">Continue</button>
         </div>
       </div>
-
-      <div class="card-right">
-        <h2>Summary</h2>
-
-        <div class="points">
-          <div class="points-card reaction">
-            <div><img src="./assets/images/icon-reaction.svg" alt="">
-              <h3>Reaction</h3>
-            </div>
-            <span class="span-outer"><span class="span-inner">80</span> / 100</span>
-          </div>
-
-          <div class="points-card memory">
-            <div><img src="./assets/images/icon-memory.svg" alt="">
-              <h3>Memory</h3>
-            </div>
-            <span class="span-outer"><span class="span-inner">92</span> / 100</span>
-          </div>
-
-          <div class="points-card verbal">
-            <div><img src="./assets/images/icon-verbal.svg" alt="">
-              <h3>Verbal</h3>
-            </div>
-            <span class="span-outer"><span class="span-inner">61</span> / 100</span>
-          </div>
-
-          <div class="points-card visual">
-            <div><img src="./assets/images/icon-visual.svg" alt="">
-              <h3>Visual</h3>
-            </div>
-            <span class="span-outer"><span class="span-inner">72</span> / 100</span>
-          </div>
-        </div>
-
-        <button type="button" class="button">
-          Continue
-        </button>
-      </div>
-    </div>
-  </main>
-</body>
-
+    </main>
+  </body>
 </html>
