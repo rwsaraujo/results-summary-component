@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Result
 
-![](./sample/sample.gif)
+![](./sample/preview.gif)
 
 ### Links
 
